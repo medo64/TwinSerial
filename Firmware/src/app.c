@@ -4,11 +4,6 @@
 #include "Microchip/usb_device_cdc.h"
 #include "app.h"
 
-bool processInput(const uint8_t* data, const uint8_t count, bool* out_LastUseLarge);
-bool processCommand(const uint8_t* data, const uint8_t count);
-void initOled(void);
-uint8_t nibbleToHex(const uint8_t value);
-bool hexToNibble(const uint8_t hex, uint8_t* nibble);
 
 #define LED_TIMEOUT       20
 #define LED_TIMEOUT_NONE  65535
